@@ -58,7 +58,7 @@ echo "<script>alert('Record deleted successfully');</script>";
                     <td><?php echo htmlentities($row['event_date']);?></td>
                     <td><?php echo htmlentities($row['event_venue']);?></td>
                     <td><?php echo htmlentities($row['event_desc']);?></td>
-                    <td><a  data-id="<?php echo $row['id']; ?>" href=""  id="read"><i class="fa fa-eye"></i></a></td>
+                    <td><a  data-id="<?php echo $row['id']; ?>" href=""  class="read"><i class="fa fa-eye"></i></a></td>
                     
                     <td><a href="update.php?id=<?php echo htmlentities($row['id']);?>"><i class="fa fa-edit"></i></a></td>
                     <td><a onClick="return confirm('Do you really want to delete');" href="index.php?del=<?php echo htmlentities($row['id']);?>"><i
@@ -85,10 +85,10 @@ $cnt++;
       <div class="modal-body">
         <div class="container">
           
-          <p><span class="text-success">Name: </span><span id="event_name"></span></p>
-          <p><span class="text-success">Date: </span><span id="event_date"></span></p>
-          <p><span class="text-success">Place: </span><span id="event_place"></span></p>
-          <p><span class="text-success">Desc: </span><span id="event_desc"></span></p>
+          <p><span class="text-success">Name: </span><span class="event_name"></span></p>
+          <p><span class="text-success">Date: </span><span class="event_date"></span></p>
+          <p><span class="text-success">Place: </span><span class="event_place"></span></p>
+          <p><span class="text-success">Desc: </span><span class="event_desc"></span></p>
         </div>
       </div>
       <div class="modal-footer">
